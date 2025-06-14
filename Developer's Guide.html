@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple|fire|3d-float|anaglyph|fire-animation">
+    <link href="logo-icon.png" rel="icon" size="512x512">
+    <title>Developer's Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 20px;
+            background-color: #f3f6fa;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-family: "Sofia";
+        }
+
+        details {
+            border: 1px solid #d0d0d0;
+            border-radius: 6px;
+            background: #fff;
+            padding: 10px 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        summary {
+            font-weight: bold;
+            font-size: 1.05em;
+            cursor: pointer;
+            outline: none;
+            padding: 6px 0;
+        }
+
+        summary:hover {
+            color: #1ae8e5;
+        }
+
+        p,
+        ul {
+            font-size: 1em;
+            margin: 8px 0;
+            padding-left: 15px;
+        }
+
+        ul li {
+            margin: 4px 0;
+        }
+
+        .font-effect-outline {
+            font-family: 'Sofia';
+            font-size: 1.4em;
+        }
+
+        .subsection {
+            margin-left: 20px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #2a61d8;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h1 class="font-effect-fire-animation">Developer's Guide - Interactive</h1><br><br>
+    <details>
+        <summary class="font-effect-outline"><img src="icon.png" alt="Computer Science and Technology" width="266.66px"
+                height="100px"></summary>
+        <p>This section breaks down the world of software and technology development, covering how things work, how to
+            get started, and their importance in real-world applications.</p>
+
+        <!-- Web Development --><!-- Web Development --><!-- Web Development --><!-- Web Development --><!-- Web Development -->
+        <!-- Web Development --><!-- Web Development --><!-- Web Development --><!-- Web Development --><!-- Web Development -->
+        <!-- Web Development --><!-- Web Development --><!-- Web Development --><!-- Web Development --><!-- Web Development -->
+        <details>
+            <summary class="font-effect-outline">🌐 Web Development</summary>
+            <details>
+                <summary>🌍 What is Web Development?</summary>
+                <p><span class="highlight">What it is:</span> The process of building and maintaining websites or web
+                    applications
+                    that run in a web browser.</p>
+                <p><strong>Major Parts:</strong> Frontend (client-side), Backend (server-side), Database, APIs, Hosting
+                    & Deployment.</p>
+            </details>
+
+            <details>
+                <summary>🎨 Frontend Development (Client-side)</summary>
+                <p><span class="highlight">What it is:</span> Everything users see and interact with directly in their
+                    browser.</p>
+                <p><strong>Core Technologies:</strong></p>
+                <ul>
+                    <li><strong>HTML:</strong> Structure of a webpage.</li>
+                    <li><strong>CSS:</strong> Styling and layout.</li>
+                    <li><strong>JavaScript:</strong> Interactivity and logic.</li>
+                </ul>
+                <p><strong>Advanced Tools & Frameworks:</strong></p>
+                <ul>
+                    <li><strong>React, Vue, Angular:</strong> Frontend frameworks/libraries for building UI components.
+                    </li>
+                    <li><strong>Tailwind CSS, Bootstrap:</strong> CSS utility frameworks for design.</li>
+                </ul>
+                <p><span class="highlight">How it works:</span> Browser parses HTML, applies CSS, runs JavaScript to
+                    render and
+                    interact with content.</p>
+                <p><strong>Steps:</strong>
+                <ol>
+                    <li>Design UI layout (wireframes or mockups)</li>
+                    <li>Convert design into code using HTML, CSS</li>
+                    <li>Add interactivity with JavaScript</li>
+                    <li>Use frameworks for large applications</li>
+                    <li>Test responsiveness and performance</li>
+                </ol>
+                </p>
+            </details>
+
+            <details>
+                <summary>🛠️ Backend Development (Server-side)</summary>
+                <p><span class="highlight">What it is:</span> Code that runs on the server to serve requests, process
+                    logic, and
+                    interact with databases.</p>
+                <p><strong>Languages & Frameworks:</strong></p>
+                <ul>
+                    <li><strong>Node.js (JavaScript):</strong> Fast, event-driven server runtime</li>
+                    <li><strong>Python:</strong> Django, Flask for rapid API development</li>
+                    <li><strong>Java (Spring Boot):</strong> Scalable, enterprise-grade applications</li>
+                    <li><strong>PHP, Ruby, Go:</strong> Other server-side options</li>
+                </ul>
+                <p><strong>Key Concepts:</strong></p>
+                <ul>
+                    <li><strong>Routing:</strong> Matching URLs to code functions</li>
+                    <li><strong>Controllers:</strong> Logic handlers for requests</li>
+                    <li><strong>Middleware:</strong> Functions that process data before/after request handling</li>
+                </ul>
+                <p><strong>Steps:</strong>
+                <ol>
+                    <li>Set up project & server (Node, Django, etc)</li>
+                    <li>Create routes and controllers</li>
+                    <li>Connect to database</li>
+                    <li>Add authentication & authorization</li>
+                    <li>Deploy backend service (e.g. on Render, Vercel)</li>
+                </ol>
+                </p>
+            </details>
+
+            <details>
+                <summary>🗃️ Database Management</summary>
+                <p><span class="highlight">What it is:</span> Storing and managing data for web applications.</p>
+                <p><strong>Types of Databases:</strong></p>
+                <ul>
+                    <li><strong>Relational (SQL):</strong> MySQL, PostgreSQL — structured, tabular data</li>
+                    <li><strong>NoSQL:</strong> MongoDB, Firebase — unstructured or semi-structured data</li>
+                </ul>
+                <p><strong>Steps:</strong>
+                <ol>
+                    <li>Design schema (structure of tables/collections)</li>
+                    <li>Connect using backend ORM or libraries (e.g. Sequelize, Mongoose)</li>
+                    <li>Perform CRUD operations (Create, Read, Update, Delete)</li>
+                </ol>
+                </p>
+            </details>
+
+            <details>
+                <summary>🔌 APIs (Application Programming Interfaces)</summary>
+                <p><span class="highlight">What it is:</span> APIs allow the frontend to communicate with backend or
+                    other services.
+                </p>
+                <p><strong>Types:</strong> REST, GraphQL, gRPC</p>
+                <p><strong>Auth Methods:</strong> JWT (token-based), OAuth (third-party logins)</p>
+                <p><strong>Steps to create:</strong>
+                <ol>
+                    <li>Define endpoints (GET /users, POST /login)</li>
+                    <li>Implement logic in backend routes</li>
+                    <li>Secure with authentication tokens</li>
+                    <li>Test with Postman or Swagger</li>
+                </ol>
+                </p>
+            </details>
+
+            <details>
+                <summary>🚀 Deployment & Hosting</summary>
+                <p><span class="highlight">What it is:</span> Making the website/app accessible to users over the
+                    internet.</p>
+                <p><strong>Frontend Hosting:</strong> Netlify, Vercel, GitHub Pages</p>
+                <p><strong>Backend Hosting:</strong> Heroku, Render, Railway, AWS EC2</p>
+                <p><strong>Steps:</strong>
+                <ol>
+                    <li>Push code to GitHub</li>
+                    <li>Connect hosting provider</li>
+                    <li>Set environment variables</li>
+                    <li>Trigger deploy pipeline</li>
+                </ol>
+                </p>
+            </details>
+
+            <details>
+                <summary>🧪 Testing & Debugging</summary>
+                <p><span class="highlight">What it is:</span> Ensuring your application works as expected.</p>
+                <p><strong>Types of Testing:</strong></p>
+                <ul>
+                    <li><strong>Unit Testing:</strong> Test small blocks of code</li>
+                    <li><strong>Integration Testing:</strong> Test modules working together</li>
+                    <li><strong>End-to-End (E2E):</strong> Simulate real user flows</li>
+                </ul>
+                <p><strong>Tools:</strong> Jest, Mocha, Cypress, Selenium</p>
+            </details>
+
+            <details>
+                <summary>📊 Performance & Optimization</summary>
+                <p><span class="highlight">What it is:</span> Improving load speed, responsiveness, and SEO.</p>
+                <p><strong>Tips:</strong>
+                <ul>
+                    <li>Minify CSS/JS</li>
+                    <li>Lazy load images</li>
+                    <li>Use CDN</li>
+                    <li>Analyze with Lighthouse</li>
+                </ul>
+                </p>
+            </details>
+        </details>
+
+        <!-- App Development --><!-- App Development --><!-- App Development --><!-- App Development --><!-- App Development -->
+        <!-- App Development --><!-- App Development --><!-- App Development --><!-- App Development --><!-- App Development -->
+        <!-- App Development --><!-- App Development --><!-- App Development --><!-- App Development --><!-- App Development -->
+        <details>
+            <summary class="font-effect-outline">📲 App Development</summary>
+            <p><span class="highlight">What it is:</span> The process of designing, building, testing, and deploying
+                software applications for mobile (Android/iOS), desktop, or hybrid platforms.</p>
+            <p><span class="highlight">How it works:</span> You write code using a framework/language suited to your
+                platform, integrate APIs or databases, then compile and test the app before releasing it to users.</p>
+
+            <details>
+                <summary>🎨 UI/UX Design</summary>
+                <p><span class="highlight">What it is:</span> User Interface (UI) and User Experience (UX) design focus
+                    on the look, feel, and usability of the app.</p>
+                <p><span class="highlight">How it works:</span> You design wireframes/mockups, test user flows, and use
+                    tools like Figma or Adobe XD to prototype interfaces.</p>
+                <ul>
+                    <li><strong>Tools:</strong> Figma, Sketch, Adobe XD</li>
+                    <li><strong>Principles:</strong> Accessibility, responsiveness, usability</li>
+                    <li><strong>Process:</strong> Research → Wireframe → Prototype → Test → Refine</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>⚙️ Frontend (Mobile UI)</summary>
+                <p><span class="highlight">What it is:</span> The client-side part of the app users interact with.</p>
+                <p><span class="highlight">How it works:</span> Code defines how buttons, screens, animations, and
+                    inputs look/behave using a framework that renders on mobile platforms.</p>
+                <ul>
+                    <li><strong>Android:</strong> Java/Kotlin with XML layouts (Jetpack Compose for modern UI)</li>
+                    <li><strong>iOS:</strong> Swift/Objective-C with SwiftUI or UIKit</li>
+                    <li><strong>Cross-platform:</strong> Flutter (Dart), React Native (JS), Xamarin (C#)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧠 Backend (APIs & Server Logic)</summary>
+                <p><span class="highlight">What it is:</span> The server-side part that handles data processing,
+                    business logic, and database interaction.</p>
+                <p><span class="highlight">How it works:</span> Mobile apps send HTTP requests to backend servers, which
+                    process the request and return data.</p>
+                <ul>
+                    <li><strong>Languages:</strong> Node.js, Python, Java, Go, PHP</li>
+                    <li><strong>Frameworks:</strong> Express.js, Django, Spring Boot</li>
+                    <li><strong>Databases:</strong> Firebase, MongoDB, PostgreSQL, MySQL</li>
+                    <li><strong>API Types:</strong> REST (standard), GraphQL (flexible querying)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🔐 Authentication</summary>
+                <p><span class="highlight">What it is:</span> Ensuring that users are who they say they are.</p>
+                <p><span class="highlight">How it works:</span> Usually involves tokens (JWT), sessions, or OAuth for
+                    third-party logins.</p>
+                <ul>
+                    <li><strong>Methods:</strong> Email/password, OTP, biometrics, social logins (Google, Apple)</li>
+                    <li><strong>Libraries:</strong> Firebase Auth, Auth0, Passport.js</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📡 Networking</summary>
+                <p><span class="highlight">What it is:</span> Handling communication between the app and the internet
+                    (servers/APIs).</p>
+                <p><span class="highlight">How it works:</span> Frontend calls backend endpoints over HTTP/HTTPS using
+                    libraries like Retrofit (Android) or Alamofire (iOS).</p>
+                <ul>
+                    <li><strong>Common formats:</strong> JSON, XML</li>
+                    <li><strong>Tools:</strong> Postman (for testing APIs), Fiddler (debug traffic)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📂 Local Storage & Databases</summary>
+                <p><span class="highlight">What it is:</span> Managing data saved on the device, like settings or
+                    offline content.</p>
+                <p><span class="highlight">How it works:</span> Use key-value storage, SQLite, or NoSQL solutions
+                    depending on the data size and complexity.</p>
+                <ul>
+                    <li><strong>Options:</strong> Shared Preferences, Room DB (Android), Core Data (iOS), SQLite, Hive
+                        (Flutter)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📦 Deployment</summary>
+                <p><span class="highlight">What it is:</span> Publishing your app to stores for users to download and
+                    use.</p>
+                <p><span class="highlight">How it works:</span> After testing and signing, you upload builds to the app
+                    stores with descriptions, screenshots, and metadata.</p>
+                <ul>
+                    <li><strong>Stores:</strong> Google Play Store, Apple App Store</li>
+                    <li><strong>Tools:</strong> Android Studio, Xcode, Fastlane (automated CI/CD)</li>
+                    <li><strong>Requirements:</strong> App icon, screenshots, privacy policy, compliance with guidelines
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🛠️ Testing</summary>
+                <p><span class="highlight">What it is:</span> Verifying that your app works as intended and is bug-free.
+                </p>
+                <p><span class="highlight">How it works:</span> Write automated and manual tests to ensure performance,
+                    UI flow, and API responses are correct.</p>
+                <ul>
+                    <li><strong>Types:</strong> Unit testing, Integration testing, UI testing</li>
+                    <li><strong>Tools:</strong> JUnit, Espresso (Android), XCTest (iOS), Flutter Test</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🚀 Continuous Integration/Delivery (CI/CD)</summary>
+                <p><span class="highlight">What it is:</span> Automating builds, tests, and deployments.</p>
+                <p><span class="highlight">How it works:</span> On each code push, CI/CD systems like GitHub Actions or
+                    Bitrise test, build, and deploy the app automatically.</p>
+                <ul>
+                    <li><strong>Benefits:</strong> Faster development, fewer bugs, safer deployments</li>
+                </ul>
+            </details>
+        </details>
+
+        <!-- Game Development --><!-- Game Development --><!-- Game Development --><!-- Game Development --><!-- Game Development -->
+        <!-- Game Development --><!-- Game Development --><!-- Game Development --><!-- Game Development --><!-- Game Development -->
+        <!-- Game Development --><!-- Game Development --><!-- Game Development --><!-- Game Development --><!-- Game Development -->
+        <details>
+            <summary class="font-effect-outline">🎲 Game Development</summary>
+            <p><span class="highlight">What it is:</span> The process of designing, developing, testing, and releasing
+                interactive games for mobile, PC, consoles, or VR/AR platforms.</p>
+            <p><span class="highlight">How it works:</span> Games are built using engines that provide tools for
+                graphics rendering, physics, input handling, and asset management. You combine logic, visuals, and audio
+                to create immersive experiences.</p>
+
+            <details>
+                <summary>🎨 Game Design</summary>
+                <p><span class="highlight">What it is:</span> The conceptual phase where storylines, gameplay mechanics,
+                    goals, and levels are crafted.</p>
+                <p><span class="highlight">How it works:</span> Designers create Game Design Documents (GDDs), define
+                    core loops, and prototype levels to test fun and difficulty balance.</p>
+                <ul>
+                    <li><strong>Focus Areas:</strong> Mechanics, story, characters, level design</li>
+                    <li><strong>Tools:</strong> Notion, Trello, Google Docs, Miro</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧱 Game Engines</summary>
+                <p><span class="highlight">What it is:</span> The core software used to build games, including
+                    rendering, physics, and scripting capabilities.</p>
+                <p><span class="highlight">How it works:</span> Developers use game engines to visually build scenes and
+                    program game logic via built-in or external scripting.</p>
+                <ul>
+                    <li><strong>Popular Engines:</strong> Unity (C#), Unreal Engine (C++/Blueprints), Godot (GDScript)
+                    </li>
+                    <li><strong>Visual Scripting:</strong> Blueprints (Unreal), Bolt (Unity)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🎭 Assets: Art, Animation, Audio</summary>
+                <p><span class="highlight">What it is:</span> The visual and audio components of the game—characters,
+                    environments, music, effects.</p>
+                <p><span class="highlight">How it works:</span> Artists create 2D sprites or 3D models; animators add
+                    movement; sound designers create SFX and BGM.</p>
+                <ul>
+                    <li><strong>Tools:</strong> Blender, Photoshop, Spine2D, FL Studio, Audacity</li>
+                    <li><strong>Formats:</strong> PNG, FBX, OBJ, WAV, MP3</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧠 Game Logic & Scripting</summary>
+                <p><span class="highlight">What it is:</span> The code that defines how the game behaves—player
+                    controls, scoring, AI, collisions.</p>
+                <p><span class="highlight">How it works:</span> Scripts are written in C#, C++, or GDScript to handle
+                    events, inputs, and interactions.</p>
+                <ul>
+                    <li><strong>Concepts:</strong> Game loops, state machines, events, object pooling</li>
+                    <li><strong>Patterns:</strong> Singleton, Observer, Component-based design</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧪 Testing & Optimization</summary>
+                <p><span class="highlight">What it is:</span> Checking that the game runs smoothly, is bug-free, and
+                    optimized for performance.</p>
+                <p><span class="highlight">How it works:</span> Use profiling tools to monitor memory/CPU/GPU usage,
+                    test levels for bugs, and tweak code/assets for speed.</p>
+                <ul>
+                    <li><strong>Tools:</strong> Unity Profiler, Unreal Insights, GDEBugger</li>
+                    <li><strong>Focus:</strong> FPS stability, asset loading, garbage collection</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🚀 Publishing</summary>
+                <p><span class="highlight">What it is:</span> Releasing the final product to platforms like Steam,
+                    Google Play, App Store, or consoles.</p>
+                <p><span class="highlight">How it works:</span> Build executable versions, pass platform guidelines,
+                    create trailers/screenshots, and deploy to stores.</p>
+                <ul>
+                    <li><strong>Platforms:</strong> Steam, Epic Games Store, PlayStation, Xbox, Android, iOS</li>
+                    <li><strong>Tools:</strong> Steamworks, Google Play Console, App Store Connect</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧑‍🚀 AR/VR Development</summary>
+                <p><span class="highlight">What it is:</span> Creating immersive Augmented or Virtual Reality
+                    experiences.</p>
+                <p><span class="highlight">How it works:</span> Uses spatial tracking, stereoscopic rendering, and
+                    hand/controller inputs to create immersive worlds.</p>
+                <ul>
+                    <li><strong>Tools:</strong> Unity XR Toolkit, Unreal VR Template</li>
+                    <li><strong>Devices:</strong> Oculus Quest, HTC Vive, HoloLens</li>
+                    <li><strong>Challenges:</strong> Motion sickness, performance, interaction design</li>
+                </ul>
+            </details>
+        </details>
+
+        <!-- Artificial Intelligence --><!-- Artificial Intelligence --><!-- Artificial Intelligence --><!-- Artificial Intelligence -->
+        <!-- Artificial Intelligence --><!-- Artificial Intelligence --><!-- Artificial Intelligence --><!-- Artificial Intelligence -->
+        <!-- Artificial Intelligence --><!-- Artificial Intelligence --><!-- Artificial Intelligence --><!-- Artificial Intelligence -->
+        <details>
+            <summary class="font-effect-outline">🧠 Artificial Intelligence (AI)</summary>
+            <p><span class="highlight">What it is:</span> The field of computer science focused on creating systems
+                capable of
+                performing tasks that typically require human intelligence.</p>
+            <p><span class="highlight">How it works:</span> AI systems use algorithms to parse data, learn from that
+                data, and then
+                make decisions based on what they have learned. This process often involves a cycle of data collection,
+                training, evaluation, and deployment.</p>
+
+            <details>
+                <summary>📘 Machine Learning (ML)</summary>
+                <p><span class="highlight">What it is:</span> A subset of AI that enables machines to learn from data
+                    without being
+                    explicitly programmed.</p>
+                <p><strong>Types:</strong></p>
+                <ul>
+                    <li><strong>Supervised Learning:</strong> Model learns using labeled data (e.g., spam detection).
+                    </li>
+                    <li><strong>Unsupervised Learning:</strong> Model identifies patterns in data without labels (e.g.,
+                        clustering).</li>
+                    <li><strong>Reinforcement Learning:</strong> Agent learns actions via rewards and penalties (e.g.,
+                        game bots).</li>
+                </ul>
+                <p><strong>Steps to do ML:</strong></p>
+                <ul>
+                    <li>Define the problem</li>
+                    <li>Collect and clean data</li>
+                    <li>Choose an algorithm (e.g., decision tree, SVM)</li>
+                    <li>Train the model</li>
+                    <li>Evaluate using metrics (accuracy, F1-score)</li>
+                    <li>Deploy and monitor</li>
+                </ul>
+                <p><strong>Tools:</strong> Scikit-learn, TensorFlow, PyTorch</p>
+            </details>
+
+            <details>
+                <summary>🧠 Deep Learning</summary>
+                <p><span class="highlight">What it is:</span> A subset of ML that uses neural networks with many layers
+                    (hence "deep")
+                    to model complex patterns in large data.</p>
+                <p><strong>Applications:</strong> Image recognition, speech-to-text, machine translation</p>
+                <p><span class="highlight">How it works:</span> Data is passed through layers of neurons that each apply
+                    transformations and pass results to the next layer. Training is done using backpropagation and
+                    gradient descent.</p>
+                <p><strong>Popular architectures:</strong> CNN, RNN, Transformers</p>
+            </details>
+
+            <details>
+                <summary>🗣️ Natural Language Processing (NLP)</summary>
+                <p><span class="highlight">What it is:</span> Enables machines to understand and generate human
+                    language.</p>
+                <p><strong>Common Tasks:</strong></p>
+                <ul>
+                    <li>Sentiment Analysis</li>
+                    <li>Text Classification</li>
+                    <li>Named Entity Recognition (NER)</li>
+                    <li>Chatbots and Question Answering</li>
+                </ul>
+                <p><span class="highlight">How it works:</span> Uses tokenization, embedding (e.g., Word2Vec, BERT), and
+                    transformers
+                    to understand context and intent.</p>
+                <p><strong>Libraries:</strong> spaCy, NLTK, Hugging Face Transformers</p>
+            </details>
+
+            <details>
+                <summary>👁️ Computer Vision</summary>
+                <p><span class="highlight">What it is:</span> Giving machines the ability to "see" and interpret visual
+                    information
+                    from the world.</p>
+                <p><strong>Applications:</strong> Face detection, object recognition, medical image analysis</p>
+                <p><span class="highlight">How it works:</span> Uses convolutional neural networks (CNNs) to process
+                    image data and
+                    detect features such as edges, shapes, and patterns.</p>
+                <p><strong>Tools:</strong> OpenCV, TensorFlow, PyTorch</p>
+            </details>
+
+            <details>
+                <summary>⚖️ AI Ethics</summary>
+                <p><span class="highlight">What it is:</span> The study of fairness, transparency, and accountability in
+                    AI systems.
+                </p>
+                <p><strong>Key Concerns:</strong></p>
+                <ul>
+                    <li>Bias in algorithms</li>
+                    <li>Data privacy</li>
+                    <li>Explainability of decisions</li>
+                    <li>AI and employment impact</li>
+                </ul>
+                <p><strong>Solutions:</strong> FairML, Model Explainability (SHAP, LIME), ethical guidelines (e.g.,
+                    IEEE, EU AI Act)</p>
+            </details>
+        </details>
+
+        <!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data -->
+        <!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data -->
+        <!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data --><!-- Data -->
+        <details>
+            <summary class="font-effect-outline">📁 Data </summary>
+            <p><span class="highlight">What it is:</span> The collection of roles and technologies focused on generating
+                insights,
+                storing, cleaning, processing, and understanding data.</p>
+            <p><strong>How it relates to AI:</strong> High-quality, clean, and large datasets are crucial for
+                effective AI models. AI learns from data — so the data field fuels AI development.</p>
+
+            <details>
+                <summary>🔍 Data Science</summary>
+                <p><span class="highlight">What it is:</span> A field combining statistics, computer science, and domain
+                    expertise
+                    to extract insights from structured and unstructured data.</p>
+                <p><span class="highlight">How it works:</span></p>
+                <ul>
+                    <li>Data Collection: Gather raw data</li>
+                    <li>Data Cleaning: Remove errors, fill missing values</li>
+                    <li>Exploratory Data Analysis: Visualize and understand trends</li>
+                    <li>Modeling: Use ML or statistics to find patterns</li>
+                    <li>Interpretation: Generate business or research insights</li>
+                </ul>
+                <p><strong>Tools:</strong> Python, R, Jupyter, Pandas, Matplotlib, Scikit-learn</p>
+            </details>
+
+            <details>
+                <summary>🛠️ Data Engineering</summary>
+                <p><span class="highlight">What it is:</span> Building systems and pipelines that collect, clean,
+                    transform, and
+                    store data for analysis and modeling.</p>
+                <p><span class="highlight">How it works:</span></p>
+                <ul>
+                    <li>Ingest Data: APIs, sensors, files</li>
+                    <li>Transform: Convert data formats, normalize data</li>
+                    <li>Store: Databases, data lakes, warehouses</li>
+                    <li>Pipeline Automation: Use schedulers like Airflow or Luigi</li>
+                </ul>
+                <p><strong>Tools:</strong> SQL, Apache Spark, Kafka, Hadoop, Snowflake, AWS Glue</p>
+            </details>
+
+            <details>
+                <summary>📈 Data Analytics</summary>
+                <p><span class="highlight">What it is:</span> The practice of examining datasets to draw conclusions and
+                    support
+                    decision-making.</p>
+                <p><strong>Types:</strong></p>
+                <ul>
+                    <li>Descriptive: What happened?</li>
+                    <li>Diagnostic: Why did it happen?</li>
+                    <li>Predictive: What might happen?</li>
+                    <li>Prescriptive: What should we do?</li>
+                </ul>
+                <p><span class="highlight">How it works:</span> Data is pulled from dashboards or warehouses and
+                    analyzed using
+                    statistical tools or BI platforms to uncover insights.</p>
+                <p><strong>Tools:</strong> Excel, Tableau, Power BI, Looker, SQL</p>
+            </details>
+
+            <details>
+                <summary>🌐 Big Data</summary>
+                <p><span class="highlight">What it is:</span> Refers to datasets that are so large or complex that
+                    traditional
+                    data processing software is inadequate.</p>
+                <p><strong>Key Concepts:</strong></p>
+                <ul>
+                    <li>Volume: Massive size</li>
+                    <li>Velocity: Real-time/fast updates</li>
+                    <li>Variety: Structured, semi-structured, unstructured data</li>
+                    <li>Veracity: Accuracy and reliability</li>
+                </ul>
+                <p><span class="highlight">How it works:</span> Data is processed using distributed computing frameworks
+                    and
+                    stored in scalable systems.</p>
+                <p><strong>Tools:</strong> Hadoop, Apache Spark, Hive, HDFS, NoSQL DBs</p>
+            </details>
+
+            <details>
+                <summary>🤖 AI & Data Connection</summary>
+                <p><strong>How AI uses data:</strong> Algorithms train on data to identify patterns. More and
+                    better-quality data improves performance and generalization.</p>
+                <p><strong>Data for AI must be:</strong></p>
+                <ul>
+                    <li>Cleaned (handle missing values, outliers)</li>
+                    <li>Balanced (equal representation)</li>
+                    <li>Split (training, validation, test sets)</li>
+                    <li>Feature engineered (selected and transformed wisely)</li>
+                </ul>
+            </details>
+        </details>
+
+        <!-- Blockchain Development --><!-- Blockchain Development --><!-- Blockchain Development --><!-- Blockchain Development -->
+        <!-- Blockchain Development --><!-- Blockchain Development --><!-- Blockchain Development --><!-- Blockchain Development -->
+        <!-- Blockchain Development --><!-- Blockchain Development --><!-- Blockchain Development --><!-- Blockchain Development -->
+        <details>
+            <summary class="font-effect-outline">🔗 Blockchain Development</summary>
+            <details>
+                <summary>🔐 What is Blockchain Development?</summary>
+                <p><span class="highlight">What it is:</span> Blockchain development is the process of building
+                    decentralized apps (dApps), smart contracts, and infrastructure using blockchain technology.</p>
+                <p><span class="highlight">How it works:</span> Data is stored across a network of computers in blocks,
+                    linked cryptographically. Each transaction is verified by nodes and added to the chain permanently
+                    (immutable).</p>
+                <p><span class="highlight">Why it matters:</span> Enables trustless systems, secure data,
+                    cryptocurrency, and tokenized assets (NFTs, DeFi).</p>
+            </details>
+
+            <details>
+                <summary>📄 Smart Contracts</summary>
+                <p><span class="highlight">What it is:</span> Self-executing contracts with rules written in code,
+                    stored on the blockchain.</p>
+                <p><span class="highlight">How it works:</span> When conditions are met (e.g., payment received), the
+                    contract executes itself without third-party involvement.</p>
+                <ul>
+                    <li><strong>Languages:</strong> Solidity (Ethereum), Rust (Solana), Vyper</li>
+                    <li><strong>Tools:</strong> Remix IDE, Hardhat, Truffle</li>
+                    <li><strong>Steps:</strong> Write → Test → Deploy → Interact</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🌐 Decentralized Applications (dApps)</summary>
+                <p><span class="highlight">What it is:</span> Applications that run on a peer-to-peer network instead of
+                    a central server.</p>
+                <p><span class="highlight">How it works:</span> Frontend communicates with smart contracts on the
+                    blockchain via Web3 interfaces.</p>
+                <ul>
+                    <li><strong>Frontend:</strong> React, Vue, Svelte</li>
+                    <li><strong>Web3 Libraries:</strong> Web3.js, Ethers.js</li>
+                    <li><strong>Wallets:</strong> MetaMask, WalletConnect</li>
+                    <li><strong>Storage:</strong> IPFS, Filecoin (for decentralized file storage)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>💰 Cryptocurrency & Tokens</summary>
+                <p><span class="highlight">What it is:</span> Digital assets used as money or to represent value on a
+                    blockchain.</p>
+                <p><span class="highlight">How it works:</span> Tokens follow standards (like ERC-20 or ERC-721) and can
+                    be traded, stored, or used in dApps.</p>
+                <ul>
+                    <li><strong>Standards:</strong> ERC-20 (fungible), ERC-721 (NFTs), ERC-1155 (multi-token)</li>
+                    <li><strong>Tools:</strong> OpenZeppelin contracts, Solidity</li>
+                    <li><strong>Steps:</strong> Create → Mint → Deploy → List on DEX</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🔄 Consensus Mechanisms</summary>
+                <p><span class="highlight">What it is:</span> Algorithms used to agree on data validity across the
+                    network.</p>
+                <p><span class="highlight">How it works:</span> Nodes validate transactions using Proof-of-Work,
+                    Proof-of-Stake, etc.</p>
+                <ul>
+                    <li><strong>PoW:</strong> Requires solving complex math problems (used by Bitcoin)</li>
+                    <li><strong>PoS:</strong> Users stake coins to validate transactions (used by Ethereum 2.0)</li>
+                    <li><strong>Other types:</strong> DPoS, BFT, PBFT</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🔍 Blockchain Infrastructure</summary>
+                <p><span class="highlight">What it is:</span> The foundation for running blockchain systems.</p>
+                <p><span class="highlight">How it works:</span> Includes nodes, clients, APIs, and the blockchain
+                    itself.</p>
+                <ul>
+                    <li><strong>Nodes:</strong> Full nodes, light nodes, archive nodes</li>
+                    <li><strong>APIs:</strong> Infura, Alchemy (for Ethereum interaction)</li>
+                    <li><strong>Networks:</strong> Ethereum, Polygon, BNB Chain, Solana, Avalanche</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📊 Blockchain Explorers</summary>
+                <p><span class="highlight">What it is:</span> Web tools to browse blockchain transactions and contracts.
+                </p>
+                <p><span class="highlight">How it works:</span> Reads and displays blockchain data like wallet balances,
+                    contract source code, and gas fees.</p>
+                <ul>
+                    <li><strong>Examples:</strong> Etherscan (Ethereum), Solscan (Solana), BscScan (BNB Chain)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🛠️ Testing and Deployment</summary>
+                <p><span class="highlight">What it is:</span> Ensuring code is bug-free before deploying to the mainnet.
+                </p>
+                <p><span class="highlight">How it works:</span> Test smart contracts on testnets, use automated tests,
+                    and deploy via CLI or IDEs.</p>
+                <ul>
+                    <li><strong>Testnets:</strong> Goerli, Sepolia, Mumbai (Polygon), Devnet (Solana)</li>
+                    <li><strong>Testing Tools:</strong> Hardhat, Ganache, Mocha</li>
+                    <li><strong>Deployment:</strong> Remix, Hardhat CLI, Truffle</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📦 Real-World Use Cases</summary>
+                <ul>
+                    <li><strong>DeFi:</strong> Uniswap, Aave, Compound (financial systems)</li>
+                    <li><strong>NFTs:</strong> OpenSea, Foundation, games with NFT assets</li>
+                    <li><strong>Supply Chain:</strong> Tracking goods immutably</li>
+                    <li><strong>Identity:</strong> Decentralized ID systems (DIDs)</li>
+                </ul>
+            </details>
+        </details>
+
+        <!-- Desktop App Development --><!-- Desktop App Development --><!-- Desktop App Development --><!-- Desktop App Development -->
+        <!-- Desktop App Development --><!-- Desktop App Development --><!-- Desktop App Development --><!-- Desktop App Development -->
+        <!-- Desktop App Development --><!-- Desktop App Development --><!-- Desktop App Development --><!-- Desktop App Development -->
+        <details>
+            <summary class="font-effect-outline">💻 Desktop App Development</summary>
+            <p><span class="highlight">What it is:</span> Building applications that run natively on desktop operating
+                systems like Windows, macOS, and Linux.</p>
+            <p><span class="highlight">How it works:</span> Applications are developed using platform-specific or
+                cross-platform frameworks, compiled into native executables, and distributed to users.</p>
+
+            <details>
+                <summary>🎨 UI/UX Design</summary>
+                <p><span class="highlight">What it is:</span> Designing the interface and experience of the desktop app.
+                </p>
+                <p><span class="highlight">How it works:</span> Tools like Figma or Adobe XD help plan the layout,
+                    interactions, and flow of the application before actual coding.</p>
+                <ul>
+                    <li><strong>Tools:</strong> Figma, Adobe XD, Balsamiq</li>
+                    <li><strong>Best Practices:</strong> Platform conventions (e.g. Windows Forms vs. macOS Aqua
+                        guidelines)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>⚙️ Frontend (GUI Programming)</summary>
+                <p><span class="highlight">What it is:</span> The part users interact with — windows, buttons, dialogs,
+                    etc.</p>
+                <p><span class="highlight">How it works:</span> GUI toolkits render components and handle events like
+                    clicks or keypresses.</p>
+                <ul>
+                    <li><strong>Languages & Frameworks:</strong>
+                        <ul>
+                            <li>Python: Tkinter, PyQt, wxPython</li>
+                            <li>C#: WinForms, WPF (.NET)</li>
+                            <li>C++: Qt, wxWidgets</li>
+                            <li>Java: JavaFX, Swing</li>
+                            <li>Electron (JS/HTML/CSS for cross-platform)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧠 Backend (App Logic)</summary>
+                <p><span class="highlight">What it is:</span> Handles the processing, calculations, and functional logic
+                    behind the UI.</p>
+                <p><span class="highlight">How it works:</span> User actions (like clicks) trigger functions that
+                    manipulate data or interact with APIs and databases.</p>
+                <ul>
+                    <li>Modularize code using OOP or MVC pattern</li>
+                    <li>Validate and process user input</li>
+                    <li>Perform background tasks (e.g. file handling, communication)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📂 File I/O & Local Storage</summary>
+                <p><span class="highlight">What it is:</span> Reading/writing files and storing user settings locally.
+                </p>
+                <p><span class="highlight">How it works:</span> Use filesystem libraries to manage files, config formats
+                    like JSON or XML for settings.</p>
+                <ul>
+                    <li><strong>Libraries:</strong> os, shutil, json, xml (Python), System.IO (C#)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🗄️ Database Integration</summary>
+                <p><span class="highlight">What it is:</span> Storing structured data within the app.</p>
+                <p><span class="highlight">How it works:</span> Use embedded or client-side databases to persist user or
+                    app data.</p>
+                <ul>
+                    <li><strong>Options:</strong> SQLite, Realm, LiteDB, NeDB (Electron)</li>
+                    <li><strong>ORMs:</strong> SQLAlchemy (Python), Entity Framework (C#)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🔐 Authentication & Security</summary>
+                <p><span class="highlight">What it is:</span> Controlling access to app features and protecting user
+                    data.</p>
+                <p><span class="highlight">How it works:</span> Local or remote auth systems, encryption, secure file
+                    handling, and sandboxing are used.</p>
+                <ul>
+                    <li>Use hashed credentials for local login</li>
+                    <li>Encrypt sensitive data using libraries (e.g., AES encryption)</li>
+                    <li>Follow OS-level security guidelines</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧪 Testing</summary>
+                <p><span class="highlight">What it is:</span> Ensuring the app behaves as expected.</p>
+                <p><span class="highlight">How it works:</span> Write unit tests for logic, simulate GUI actions, and
+                    conduct manual testing across OS versions.</p>
+                <ul>
+                    <li><strong>Tools:</strong> unittest/pytest (Python), MSTest/xUnit (C#), QTest (Qt)</li>
+                    <li><strong>Strategies:</strong> Unit tests, Integration tests, UI automation</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📦 Packaging & Distribution</summary>
+                <p><span class="highlight">What it is:</span> Creating installable packages and delivering them to
+                    users.</p>
+                <p><span class="highlight">How it works:</span> Use tools to bundle executables, resources, and
+                    dependencies into native installers.</p>
+                <ul>
+                    <li><strong>Tools:</strong> Inno Setup, NSIS (Windows), pyinstaller, electron-builder</li>
+                    <li><strong>Formats:</strong> .exe (Windows), .dmg (macOS), .AppImage/.deb (Linux)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🔄 Updates & Maintenance</summary>
+                <p><span class="highlight">What it is:</span> Keeping the app secure and feature-rich post-release.</p>
+                <p><span class="highlight">How it works:</span> Monitor issues, patch bugs, and push updates using
+                    version control or automatic update systems.</p>
+                <ul>
+                    <li>Use Git for version control</li>
+                    <li>Electron apps can auto-update via electron-updater</li>
+                    <li>Monitor crash logs, user feedback</li>
+                </ul>
+            </details>
+
+        </details>
+
+        <!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity -->
+        <!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity -->
+        <!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity --><!-- Cybersecurity -->
+        <details>
+            <summary class="font-effect-outline">🥷🏻 Cybersecurity</summary>
+            <details>
+                <summary>🔐 What is Cybersecurity?</summary>
+                <p><span class="highlight">What it is:</span> Cybersecurity involves protecting systems, networks, and
+                    data
+                    from digital attacks, unauthorized access, and damage.</p>
+                <p><span class="highlight">Goal:</span> Ensure confidentiality, integrity, and availability (CIA triad)
+                    of
+                    information.</p>
+            </details>
+
+            <details>
+                <summary>🎯 Ethical Hacking</summary>
+                <p><span class="highlight">What it is:</span> Authorized hacking intended to discover security flaws
+                    before
+                    malicious hackers do.</p>
+                <p><span class="highlight">How to do it:</span></p>
+                <ul>
+                    <li>Understand networks, Linux, web applications.</li>
+                    <li>Learn tools: Nmap (recon), Burp Suite (web exploit), Metasploit (exploits).</li>
+                    <li>Practice on platforms like Hack The Box, TryHackMe.</li>
+                    <li>Learn programming (Python, Bash, JavaScript).</li>
+                    <li>Get CEH (Certified Ethical Hacker) or OSCP certifications.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>💰 Bug Bounty Hunting</summary>
+                <p><span class="highlight">What it is:</span> Finding and reporting vulnerabilities in real companies’
+                    systems for rewards.</p>
+                <ul>
+                    <li>Register on platforms: HackerOne, Bugcrowd, Synack.</li>
+                    <li>Understand recon (subdomain discovery, open ports).</li>
+                    <li>Focus on: XSS, SQLi, IDOR, SSRF, RCE.</li>
+                    <li>Write clear reports with Proof of Concept (PoC).</li>
+                    <li>Use tools like Burp Suite, ffuf, nuclei.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧠 Red Teaming vs Blue Teaming</summary>
+                <ul>
+                    <li><span class="highlight">Red Team:</span> Offensive experts who simulate real-world attacks to
+                        test
+                        defenses.</li>
+                    <li><span class="highlight">Blue Team:</span> Defensive experts who detect, respond, and prevent
+                        attacks.</li>
+                    <li><span class="highlight">Purple Team:</span> Blend both to improve coordination.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>⚙️ Real-World Implementation</summary>
+                <p><span class="highlight">How to secure systems:</span></p>
+                <ul>
+                    <li>Apply firewalls, antivirus, and patch software.</li>
+                    <li>Use endpoint detection and response (EDR) tools.</li>
+                    <li>Encrypt data at rest and in transit.</li>
+                    <li>Conduct regular vulnerability scans and audits.</li>
+                    <li>Implement Zero Trust security model.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📱 Securing Apps and Devices</summary>
+                <ul>
+                    <li>Enable biometrics, app sandboxing, permissions control.</li>
+                    <li>Secure APIs (rate limiting, validation, auth headers).</li>
+                    <li>Use secure coding practices: input validation, proper error handling.</li>
+                    <li>Use SAST/DAST tools (SonarQube, OWASP ZAP).</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🌐 Common Attack Vectors</summary>
+                <ul>
+                    <li><strong>Phishing:</strong> Fake emails/sites to steal credentials.</li>
+                    <li><strong>Ransomware:</strong> Encrypts data, demands ransom.</li>
+                    <li><strong>DDoS:</strong> Overwhelm systems with traffic.</li>
+                    <li><strong>SQL Injection:</strong> Inject queries to access unauthorized data.</li>
+                    <li><strong>Man-in-the-middle:</strong> Intercepting communication streams.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🛠️ Tools of the Trade</summary>
+                <ul>
+                    <li><strong>Offensive:</strong> Nmap, Nikto, Metasploit, Burp Suite, SQLmap</li>
+                    <li><strong>Defensive:</strong> Wireshark, Splunk, OSSEC, ELK Stack, Suricata</li>
+                    <li><strong>Forensics:</strong> Autopsy, Volatility, FTK</li>
+                    <li><strong>SIEM:</strong> Security Information and Event Management systems (e.g., Splunk, Graylog)
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📈 Certifications</summary>
+                <ul>
+                    <li>Beginner: CompTIA Security+, eJPT</li>
+                    <li>Intermediate: CEH, PNPT</li>
+                    <li>Advanced: OSCP, CISSP, GPEN, CRTP</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📚 Learning Resources</summary>
+                <ul>
+                    <li>TryHackMe, HackTheBox, PortSwigger Academy</li>
+                    <li>Books: "The Web Application Hacker’s Handbook", "Hacking: The Art of Exploitation"</li>
+                    <li>Communities: Reddit (/r/netsec), Discord, Bugcrowd forums</li>
+                </ul>
+            </details>
+        </details>
+
+        <!-- Software Engineering --><!-- Software Engineering --><!-- Software Engineering --><!-- Software Engineering --><!-- Software Engineering -->
+        <!-- Software Engineering --><!-- Software Engineering --><!-- Software Engineering --><!-- Software Engineering --><!-- Software Engineering -->
+        <!-- Software Engineering --><!-- Software Engineering --><!-- Software Engineering --><!-- Software Engineering --><!-- Software Engineering -->
+        <details>
+            <summary class="font-effect-outline">🛠️ Software Engineering</summary>
+            <details>
+                <summary>🔧 What is Software Engineering?</summary>
+                <p><span class="highlight">What it is:</span> Software engineering is the systematic application of
+                    engineering approaches to the development of software. It includes planning, design, development,
+                    testing, deployment, and maintenance of software systems.</p>
+                <p><span class="highlight">Goal:</span> Build reliable, scalable, maintainable, and efficient software
+                    that solves user problems.</p>
+            </details>
+
+            <details>
+                <summary>📐 Software Development Life Cycle (SDLC)</summary>
+                <ul>
+                    <li><strong>Requirement Analysis:</strong> Gather client and stakeholder needs.</li>
+                    <li><strong>System Design:</strong> Define architecture, technologies, and interfaces.</li>
+                    <li><strong>Implementation:</strong> Code the software modules and integrate.</li>
+                    <li><strong>Testing:</strong> Validate that it meets specifications and is bug-free.</li>
+                    <li><strong>Deployment:</strong> Make it available to users via servers or platforms.</li>
+                    <li><strong>Maintenance:</strong> Fix issues and add new features as needed.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>💡 Software Design Principles</summary>
+                <ul>
+                    <li><strong>SOLID:</strong> Object-oriented design principles for maintainability.</li>
+                    <li><strong>DRY:</strong> Don’t Repeat Yourself — promote reusability.</li>
+                    <li><strong>KISS:</strong> Keep It Simple, Stupid — avoid unnecessary complexity.</li>
+                    <li><strong>YAGNI:</strong> You Aren’t Gonna Need It — don’t implement unused features.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📦 Software Architecture</summary>
+                <p>Defines the structure of a system: how components interact, communicate, and manage data.</p>
+                <ul>
+                    <li><strong>Monolithic:</strong> All-in-one application.</li>
+                    <li><strong>Microservices:</strong> Independent services communicating via APIs.</li>
+                    <li><strong>Serverless:</strong> Use functions hosted in the cloud, triggered on demand.</li>
+                    <li><strong>Layered Architecture:</strong> Split into UI, logic, data access layers.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>⚙️ Tools & Languages</summary>
+                <ul>
+                    <li><strong>Languages:</strong> Java, Python, C++, JavaScript, Go, Rust</li>
+                    <li><strong>Version Control:</strong> Git, GitHub, GitLab, Bitbucket</li>
+                    <li><strong>Build Tools:</strong> Maven, Gradle, Webpack</li>
+                    <li><strong>IDEs:</strong> VS Code, IntelliJ, Eclipse, PyCharm</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧪 Testing & QA</summary>
+                <ul>
+                    <li><strong>Unit Testing:</strong> Test individual components (e.g., JUnit, pytest)</li>
+                    <li><strong>Integration Testing:</strong> Test combined components.</li>
+                    <li><strong>End-to-End (E2E):</strong> Simulate user workflows (e.g., Selenium, Cypress)</li>
+                    <li><strong>CI Testing:</strong> Automated testing pipelines.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🚀 Deployment & DevOps</summary>
+                <p><span class="highlight">Deployment:</span> Move code to production using CI/CD pipelines like GitHub
+                    Actions, Jenkins, or GitLab CI.</p>
+                <p><span class="highlight">Containerization:</span> Package apps with dependencies using Docker.</p>
+                <p><span class="highlight">Orchestration:</span> Manage containers using Kubernetes.</p>
+            </details>
+
+            <details>
+                <summary>👨‍👩‍👧‍👦 Team Roles & Collaboration</summary>
+                <ul>
+                    <li><strong>Product Manager:</strong> Defines what to build.</li>
+                    <li><strong>Software Engineer:</strong> Implements the functionality.</li>
+                    <li><strong>QA Engineer:</strong> Ensures quality via testing.</li>
+                    <li><strong>DevOps Engineer:</strong> Maintains deployment pipelines and infrastructure.</li>
+                    <li><strong>UI/UX Designer:</strong> Crafts user interfaces and experiences.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📚 Best Practices & Learning</summary>
+                <ul>
+                    <li>Read clean code practices (e.g., "Clean Code" by Robert Martin)</li>
+                    <li>Follow design patterns (Singleton, Factory, Observer)</li>
+                    <li>Contribute to open source projects for experience</li>
+                    <li>Join developer communities (Stack Overflow, Reddit, Dev.to)</li>
+                </ul>
+            </details>
+        </details>
+
+        <!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps -->
+        <!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps -->
+        <!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps --><!-- DevOps -->
+        <details>
+            <summary class="font-effect-outline">⚙️ DevOps</summary>
+            <details>
+                <summary>🔧 What is DevOps?</summary>
+                <p><span class="highlight">What it is:</span> DevOps is a set of practices that combines software
+                    development (Dev) and IT operations (Ops) to shorten the development lifecycle and deliver
+                    high-quality software continuously.</p>
+                <p><span class="highlight">Goal:</span> Improve collaboration between developers and operations,
+                    automate processes, and enable faster releases.</p>
+            </details>
+
+            <details>
+                <summary>📈 DevOps Lifecycle</summary>
+                <ul>
+                    <li><strong>Plan:</strong> Collaborate with stakeholders to define features, goals, and timelines
+                        using tools like Jira or Trello.</li>
+                    <li><strong>Develop:</strong> Code applications with version control (e.g., Git). Write clean,
+                        modular code and use code reviews.</li>
+                    <li><strong>Build:</strong> Use tools like Maven/Gradle or Webpack to compile code into deployable
+                        units.</li>
+                    <li><strong>Test:</strong> Perform automated unit, integration, and UI tests using testing
+                        frameworks (JUnit, Selenium).</li>
+                    <li><strong>Release:</strong> Use versioning and changelogs; trigger releases via CI pipelines.</li>
+                    <li><strong>Deploy:</strong> Use automated tools like Jenkins or GitHub Actions to push code to
+                        environments (staging/production).</li>
+                    <li><strong>Operate:</strong> Run and maintain the app; manage uptime, resources, and services.</li>
+                    <li><strong>Monitor:</strong> Continuously analyze logs and performance to detect issues early.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🔧 DevOps Tools</summary>
+                <ul>
+                    <li><strong>Version Control:</strong> Git, GitHub, GitLab</li>
+                    <li><strong>CI/CD:</strong> Jenkins, GitHub Actions, GitLab CI, CircleCI, Travis CI</li>
+                    <li><strong>Containerization:</strong> Docker (build and run containerized apps)</li>
+                    <li><strong>Orchestration:</strong> Kubernetes (manage containers across clusters)</li>
+                    <li><strong>Infrastructure as Code (IaC):</strong> Terraform, Ansible, Pulumi</li>
+                    <li><strong>Monitoring:</strong> Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana)
+                    </li>
+                    <li><strong>Security:</strong> SonarQube, Snyk, AquaSec</li>
+                    <li><strong>Logging:</strong> Fluentd, Loki</li>
+                </ul>
+            </details>
+            <details>
+                <summary>🔄 CI/CD Pipelines</summary>
+                <p><span class="highlight">CI (Continuous Integration):</span> Developers push code frequently to a
+                    shared repository. Each push triggers builds and automated tests.</p>
+                <p><span class="highlight">CD (Continuous Deployment):</span> Automatically deploy code to
+                    staging/production if all tests pass.</p>
+                <ul>
+                    <li><strong>Tools:</strong> GitHub Actions, GitLab CI, Jenkins, CircleCI, Travis CI</li>
+                    <li><strong>Steps:</strong> Code → Build → Test → Deploy</li>
+                </ul>
+                <ul>
+                    <li><strong>Step 1:</strong> Push code to Git repository</li>
+                    <li><strong>Step 2:</strong> CI tools automatically build and test code</li>
+                    <li><strong>Step 3:</strong> If tests pass, code is deployed to a test or production server</li>
+                    <li><strong>Step 4:</strong> Monitoring and rollback mechanisms ensure safety</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📦 Containerization & Virtualization</summary>
+                <ul>
+                    <li><strong>Docker:</strong> Package applications with all dependencies</li>
+                    <li><strong>Images:</strong> Blueprints of containers (e.g., Ubuntu + Node.js)</li>
+                    <li><strong>Containers:</strong> Lightweight isolated environments</li>
+                    <li><strong>VMs:</strong> Heavier than containers, simulate entire OS</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🔧 Configuration Management</summary>
+                <p>Automate server and software configuration.</p>
+                <ul>
+                    <li><strong>Tools:</strong> Ansible, Puppet, Chef, SaltStack</li>
+                    <li><strong>What they do:</strong> Install packages, update systems, configure firewalls
+                        automatically</li>
+                    <li><strong>Why:</strong> Consistency and repeatability across environments</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📡 Infrastructure as Code (IaC)</summary>
+                <p>Define infrastructure (networks, servers) in code.</p>
+                <ul>
+                    <li><strong>Tools:</strong> Terraform, AWS CloudFormation</li>
+                    <li><strong>Use:</strong> Automate cloud infrastructure like AWS, Azure, GCP</li>
+                    <li><strong>Benefits:</strong> Version-controlled, consistent, testable infrastructure</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📈 Monitoring & Logging</summary>
+                <p>Track app performance, usage, and errors post-deployment.</p>
+                <ul>
+                    <li><strong>Tools:</strong> Prometheus, Grafana, ELK Stack (Elasticsearch, Logstash, Kibana),
+                        Datadog</li>
+                    <li><strong>Metrics:</strong> CPU, RAM, traffic, errors, logs, DB queries</li>
+                    <li><strong>Alerts:</strong> Trigger notifications on failure or anomaly</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🔐 Security in DevOps (DevSecOps)</summary>
+                <p><span class="highlight">What it is:</span> Integrating security practices into DevOps pipelines.</p>
+                <ul>
+                    <li><strong>Static Code Analysis:</strong> Check code for vulnerabilities (e.g., SonarQube)</li>
+                    <li><strong>Secrets Management:</strong> Store credentials securely (e.g., Vault, AWS Secrets
+                        Manager)</li>
+                    <li><strong>Scanning:</strong> Use tools like Trivy or Clair to scan Docker images</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🚀 Applying DevOps to Real Projects</summary>
+                <p><span class="highlight">For Web Projects:</span></p>
+                <ul>
+                    <li>CI/CD pipeline to deploy frontend and backend</li>
+                    <li>Use Docker containers for services (e.g., React + Node.js)</li>
+                    <li>Host on AWS/GCP/Azure/Vercel/Netlify</li>
+                    <li>Monitor performance and logs</li>
+                </ul>
+                <p><span class="highlight">For App Projects:</span></p>
+                <ul>
+                    <li>Automate app builds with GitHub Actions</li>
+                    <li>Use Firebase/App Center for deployment and crash reporting</li>
+                    <li>Monitor with Sentry, Firebase Analytics</li>
+                    <li>Test builds using device farms (e.g., BrowserStack, Firebase Test Lab)</li>
+                </ul>
+                <p><strong>In APIs:</strong> Auto-deploy backend APIs on AWS Lambda, Heroku, or DigitalOcean with CI/CD.
+                </p>
+            </details>
+
+            <details>
+                <summary>👥 DevOps Roles & Teams</summary>
+                <ul>
+                    <li><strong>DevOps Engineer:</strong> Builds pipelines, manages infra, configures tools</li>
+                    <li><strong>SRE (Site Reliability Engineer):</strong> Ensures app reliability and uptime</li>
+                    <li><strong>Platform Engineer:</strong> Creates reusable DevOps infrastructure and tooling</li>
+                    <li><strong>Cloud Engineer:</strong> Specializes in AWS, GCP, Azure infrastructure</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📚 Learning DevOps</summary>
+                <ul>
+                    <li><strong>Start with:</strong> Git, CI/CD basics, Docker, Bash scripting</li>
+                    <li><strong>Then learn:</strong> Kubernetes, Terraform, Ansible, Monitoring</li>
+                    <li><strong>Certifications:</strong> AWS DevOps Engineer, Docker Certified Associate, CKA
+                        (Kubernetes Admin)</li>
+                    <li><strong>Resources:</strong> DevOps Roadmap, freeCodeCamp, KodeKloud, Udemy</li>
+                </ul>
+            </details>
+        </details>
+
+        <!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT -->
+        <!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT -->
+        <!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT --><!-- IoT -->
+        <details>
+            <summary class="font-effect-outline">📡 Internet of Things (IoT)</summary>
+            <details>
+                <summary>📌 What is IoT?</summary>
+                <p>IoT stands for Internet of Things, a system of interrelated computing devices, sensors, machines, and
+                    objects connected via the Internet to collect and exchange data without human interaction.</p>
+            </details>
+
+            <details>
+                <summary>📊 Key Components of IoT</summary>
+                <ul>
+                    <li><strong>Devices/Sensors:</strong> Capture data from the environment (temperature, light, motion,
+                        etc.)</li>
+                    <li><strong>Connectivity:</strong> Transmit data using protocols (WiFi, Bluetooth, Zigbee, 5G)</li>
+                    <li><strong>Data Processing:</strong> Analyze data locally (edge computing) or remotely (cloud)</li>
+                    <li><strong>User Interface:</strong> Display or control devices through apps or dashboards</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>⚙️ How IoT Works (Step-by-Step)</summary>
+                <ul>
+                    <li><strong>Step 1:</strong> Sensors/devices collect data</li>
+                    <li><strong>Step 2:</strong> Data is sent to the cloud or local server</li>
+                    <li><strong>Step 3:</strong> Software analyzes data and takes action (e.g., alert, automation)</li>
+                    <li><strong>Step 4:</strong> Interface allows users to monitor/control devices remotely</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📡 Communication Protocols</summary>
+                <ul>
+                    <li>Wi-Fi</li>
+                    <li>Bluetooth / BLE</li>
+                    <li>Zigbee</li>
+                    <li>Z-Wave</li>
+                    <li>LoRaWAN</li>
+                    <li>NB-IoT / LTE-M</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🔧 Common IoT Platforms</summary>
+                <ul>
+                    <li>Arduino IoT Cloud</li>
+                    <li>Raspberry Pi + Node-RED</li>
+                    <li>Google Cloud IoT</li>
+                    <li>Amazon AWS IoT Core</li>
+                    <li>Microsoft Azure IoT Hub</li>
+                    <li>ThingsBoard</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🏠 Real-world Applications</summary>
+                <ul>
+                    <li><strong>Smart Homes:</strong> Lights, AC, security cameras, voice assistants</li>
+                    <li><strong>Healthcare:</strong> Wearables, remote monitoring</li>
+                    <li><strong>Agriculture:</strong> Soil sensors, smart irrigation</li>
+                    <li><strong>Industry:</strong> Machine diagnostics, predictive maintenance</li>
+                    <li><strong>Smart Cities:</strong> Traffic lights, waste management, pollution sensors</li>
+                    <li><strong>Retail:</strong> Inventory tracking, smart shelves</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🔒 IoT Security Considerations</summary>
+                <ul>
+                    <li>Secure communication (SSL/TLS)</li>
+                    <li>Strong device authentication</li>
+                    <li>Firmware updates and patching</li>
+                    <li>Network segmentation</li>
+                    <li>Data encryption (in transit and at rest)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>💡 Getting Started with IoT Projects</summary>
+                <ul>
+                    <li>Start with Arduino or Raspberry Pi</li>
+                    <li>Use sensors like DHT11, PIR, IR, etc.</li>
+                    <li>Connect with cloud via MQTT or HTTP</li>
+                    <li>Control devices with mobile/web apps</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📁 Tools & Languages</summary>
+                <ul>
+                    <li><strong>Languages:</strong> C/C++, Python, JavaScript (Node.js)</li>
+                    <li><strong>Protocols:</strong> MQTT, HTTP/HTTPS, CoAP</li>
+                    <li><strong>Microcontrollers:</strong> ESP8266, ESP32, Arduino UNO</li>
+                    <li><strong>Simulators:</strong> Tinkercad, Wokwi</li>
+                </ul>
+            </details>
+        </details>
+
+        <!-- Quantum Computing--><!-- Quantum Computing--><!-- Quantum Computing--><!-- Quantum Computing--><!-- Quantum Computing-->
+        <!-- Quantum Computing--><!-- Quantum Computing--><!-- Quantum Computing--><!-- Quantum Computing--><!-- Quantum Computing-->
+        <!-- Quantum Computing--><!-- Quantum Computing--><!-- Quantum Computing--><!-- Quantum Computing--><!-- Quantum Computing-->
+        <details>
+            <summary class="font-effect-outline">⚛️ Quantum Computing</summary>
+            <details>
+                <summary>🧠 What is Quantum Computing?</summary>
+                <p>Quantum Computing uses quantum mechanics principles to process information in fundamentally different
+                    ways from classical computers. It operates using <strong>qubits</strong> which can exist in multiple
+                    states simultaneously (superposition).</p>
+            </details>
+
+            <details>
+                <summary>🔬 Key Concepts</summary>
+                <ul>
+                    <li><strong>Qubit:</strong> The basic unit of quantum information. Unlike bits (0 or 1), qubits can
+                        be in a superposition of states.</li>
+                    <li><strong>Superposition:</strong> A qubit can represent both 0 and 1 at the same time.</li>
+                    <li><strong>Entanglement:</strong> Qubits can be correlated with each other so that the state of one
+                        affects the state of the other.</li>
+                    <li><strong>Quantum Gates:</strong> Operations applied to qubits (e.g., Hadamard, Pauli-X, CNOT).
+                    </li>
+                    <li><strong>Quantum Circuit:</strong> A model that describes a computation using quantum gates.</li>
+                    <li><strong>Measurement:</strong> The process of extracting classical data from quantum systems
+                        collapses the qubit's state to either 0 or 1.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>⚙️ How It Works</summary>
+                <p>Quantum computers perform calculations by manipulating qubits through quantum gates. Unlike classical
+                    algorithms, quantum algorithms can solve specific problems more efficiently (like Shor's for
+                    factoring or Grover’s for search).</p>
+                <ul>
+                    <li>Start with qubits in a known state</li>
+                    <li>Apply a series of quantum gates (building a quantum circuit)</li>
+                    <li>Measure the qubits to get output</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧰 Tools and Platforms</summary>
+                <ul>
+                    <li><strong>Qiskit:</strong> Python SDK for IBM Quantum systems</li>
+                    <li><strong>Cirq:</strong> Google’s library for creating quantum circuits</li>
+                    <li><strong>QuTiP:</strong> Quantum Toolbox in Python</li>
+                    <li><strong>IBM Quantum Lab:</strong> Cloud-based quantum computing environment</li>
+                    <li><strong>Microsoft Q#:</strong> Quantum programming language</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📈 Real-World Applications</summary>
+                <ul>
+                    <li><strong>Cryptography:</strong> Breaking RSA encryption (Shor’s algorithm)</li>
+                    <li><strong>Optimization:</strong> Supply chain, logistics, finance (Quantum annealing)</li>
+                    <li><strong>Machine Learning:</strong> Quantum neural networks, clustering</li>
+                    <li><strong>Drug Discovery:</strong> Simulating molecular structures</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📚 Learning Resources</summary>
+                <ul>
+                    <li>IBM Quantum Composer (GUI + Python)</li>
+                    <li>Qiskit Textbook - <a href="https://qiskit.org/learn">qiskit.org/learn</a></li>
+                    <li>Microsoft Quantum Docs</li>
+                    <li>“Quantum Computing for the Very Curious” by Andy Matuschak & Michael Nielsen</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🚀 Getting Started</summary>
+                <ul>
+                    <li>Learn Python basics</li>
+                    <li>Install Qiskit (`pip install qiskit`)</li>
+                    <li>Create simple circuits and run on simulators</li>
+                    <li>Get access to IBM Quantum’s real devices (free)</li>
+                    <li>Experiment and visualize quantum states</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🛠️ Sample Code</summary>
+                <pre><code>
+from qiskit import QuantumCircuit, Aer, execute
+        
+qc = QuantumCircuit(1, 1)
+qc.h(0)  # Apply Hadamard gate
+qc.measure(0, 0)
+        
+simulator = Aer.get_backend('qasm_simulator')
+result = execute(qc, backend=simulator, shots=1000).result()
+counts = result.get_counts()
+print(counts)
+                </code></pre>
+            </details>
+        </details>
+
+        <!-- Low-Code / No-Code --><!-- Low-Code / No-Code --><!-- Low-Code / No-Code --><!-- Low-Code / No-Code --><!-- Low-Code / No-Code -->
+        <!-- Low-Code / No-Code --><!-- Low-Code / No-Code --><!-- Low-Code / No-Code --><!-- Low-Code / No-Code --><!-- Low-Code / No-Code -->
+        <!-- Low-Code / No-Code --><!-- Low-Code / No-Code --><!-- Low-Code / No-Code --><!-- Low-Code / No-Code --><!-- Low-Code / No-Code -->
+        <details>
+            <summary class="font-effect-outline">🧩 Low-Code / No-Code</summary>
+            <details>
+                <summary>🌐 What is Low-Code / No-Code?</summary>
+                <p><span class="highlight">Low-Code:</span> Platforms that require minimal hand-coding and use visual
+                    interfaces to speed up development. Some logic or customization may still require code.</p>
+                <p><span class="highlight">No-Code:</span> Platforms that enable users to build apps entirely through
+                    visual
+                    tools, without writing any code.</p>
+                <p><span class="highlight">Purpose:</span> To democratize software development and allow faster
+                    iteration by
+                    business users, designers, or non-technical teams.</p>
+            </details>
+
+            <details>
+                <summary>🔧 Tools & Platforms</summary>
+                <ul>
+                    <li><strong>No-Code App Builders:</strong> Glide, Adalo, AppGyver, Thunkable</li>
+                    <li><strong>Low-Code Platforms:</strong> OutSystems, Mendix, Microsoft Power Apps, Zoho Creator</li>
+                    <li><strong>Automation & Workflows:</strong> Zapier, Make (Integromat), n8n</li>
+                    <li><strong>Website Builders:</strong> Webflow, Wix, Squarespace, Carrd</li>
+                    <li><strong>Database & Backend:</strong> Airtable, Firebase, Supabase</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧱 How It Works</summary>
+                <ul>
+                    <li>Use drag-and-drop elements to design UIs.</li>
+                    <li>Connect databases using built-in or external integrations.</li>
+                    <li>Add logic using visual flowcharts or form-based rules.</li>
+                    <li>Test and preview inside the platform.</li>
+                    <li>Deploy to web/mobile with a click—no compilation required.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🚀 Use Cases</summary>
+                <ul>
+                    <li>Internal tools or dashboards for businesses</li>
+                    <li>Customer portals or client interfaces</li>
+                    <li>Event registration and booking apps</li>
+                    <li>Inventory or order management systems</li>
+                    <li>Data collection forms and reporting</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📈 Benefits & Limitations</summary>
+                <p><strong>✅ Benefits:</strong></p>
+                <ul>
+                    <li>Rapid development with low learning curve</li>
+                    <li>Cost-effective for MVPs and startups</li>
+                    <li>Less dependence on developers</li>
+                </ul>
+                <p><strong>❌ Limitations:</strong></p>
+                <ul>
+                    <li>Less flexible than custom code</li>
+                    <li>Vendor lock-in risk</li>
+                    <li>Performance may not match native apps</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📚 Learning Resources</summary>
+                <ul>
+                    <li><strong>Glide University:</strong> https://www.glideapps.com/learn</li>
+                    <li><strong>Adalo Tutorials:</strong> https://help.adalo.com</li>
+                    <li><strong>OutSystems Training:</strong> https://www.outsystems.com/learn/</li>
+                    <li><strong>Webflow University:</strong> https://university.webflow.com/</li>
+                    <li><strong>n8n Docs:</strong> https://docs.n8n.io</li>
+                </ul>
+            </details>
+        </details>
+
+        <!-- Human Code Interaction --><!-- Human Code Interaction --><!-- Human Code Interaction --><!-- Human Code Interaction --><!-- Human Code Interaction -->
+        <!-- Human Code Interaction --><!-- Human Code Interaction --><!-- Human Code Interaction --><!-- Human Code Interaction --><!-- Human Code Interaction -->
+        <!-- Human Code Interaction --><!-- Human Code Interaction --><!-- Human Code Interaction --><!-- Human Code Interaction --><!-- Human Code Interaction -->
+        <details>
+            <summary class="font-effect-outline">🖱️ Human Code Interaction (HCI)</summary>
+            <details>
+                <summary>📌 What is HCI?</summary>
+                <p><span class="highlight">HCI (Human-Computer Interaction)</span> is the study and design of how people
+                    interact with computers and technology interfaces. It combines computer science, cognitive
+                    psychology, design, and ergonomics.</p>
+                <p>The goal is to make software and hardware systems usable, efficient, and accessible.</p>
+            </details>
+
+            <details>
+                <summary>🎯 Core Principles</summary>
+                <ul>
+                    <li><strong>Usability:</strong> Systems must be easy to learn, efficient, and error-free.</li>
+                    <li><strong>Affordance:</strong> Visual clues should show how elements can be used (e.g., buttons
+                        look clickable).</li>
+                    <li><strong>Feedback:</strong> Systems should respond clearly to user actions (e.g., loading
+                        indicators).</li>
+                    <li><strong>Consistency:</strong> Similar elements should behave similarly across screens.</li>
+                    <li><strong>Error Prevention:</strong> Design should guide users and reduce the chances of mistakes.
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>⚙️ Design Process</summary>
+                <ul>
+                    <li><strong>1. User Research:</strong> Interviews, observations, surveys to understand user needs.
+                    </li>
+                    <li><strong>2. Task Analysis:</strong> Understand how users complete goals and what challenges they
+                        face.</li>
+                    <li><strong>3. Wireframing:</strong> Sketching the structure and interface layout.</li>
+                    <li><strong>4. Prototyping:</strong> Interactive versions using tools like Figma or Adobe XD.</li>
+                    <li><strong>5. Usability Testing:</strong> Watching users interact with the prototype and gathering
+                        feedback.</li>
+                    <li><strong>6. Iteration:</strong> Continuously refining the design based on testing data.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🔧 Tools Used in HCI</summary>
+                <ul>
+                    <li><strong>Design:</strong> Figma, Adobe XD, Sketch</li>
+                    <li><strong>Prototyping:</strong> InVision, Marvel App</li>
+                    <li><strong>User Testing:</strong> Maze, UsabilityHub, Lookback</li>
+                    <li><strong>Eye Tracking:</strong> Tobii, EyeQuant</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📱 HCI in Real Applications</summary>
+                <ul>
+                    <li>Mobile App UI Design</li>
+                    <li>Desktop Software Interface</li>
+                    <li>Websites & Dashboards</li>
+                    <li>AR/VR Interfaces</li>
+                    <li>Touchscreens and Kiosks</li>
+                    <li>Voice Interfaces (e.g., Alexa, Siri)</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>🧠 Psychology in HCI</summary>
+                <p>Understanding human perception, memory, and decision-making is key to designing better systems.</p>
+                <ul>
+                    <li><strong>Fitts's Law:</strong> Predicts time to reach a target based on distance and size
+                        (applies to button placement).</li>
+                    <li><strong>Hick's Law:</strong> More choices = more decision time. Keep interfaces simple.</li>
+                    <li><strong>Mental Models:</strong> Design based on users’ expectations from real-world experiences.
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>📚 Learning Resources</summary>
+                <ul>
+                    <li><strong>Interaction Design Foundation:</strong> https://www.interaction-design.org/</li>
+                    <li><strong>Coursera HCI Specialization:</strong> Stanford HCI Course</li>
+                    <li><strong>Book:</strong> "The Design of Everyday Things" by Don Norman</li>
+                    <li><strong>Book:</strong> "Don't Make Me Think" by Steve Krug</li>
+                </ul>
+            </details>
+        </details>
+    </details>
+</body>
+
+</html>
