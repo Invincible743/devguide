@@ -1,0 +1,301 @@
+/* Root Styling */
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --highlight-bg: #fff3cd;
+    --border-color: #dee2e6;
+    --box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    --card-bg: #ffffff;
+    --card-text: #212529;
+    --btn-bg: #1e1e1e;
+    --btn-color: #f1f1f1;
+    --btn-highlight: #3b3b3b;
+
+    /* Hierarchy helpers */
+    --section-bg: #e6f0ff;
+    --section-border: #0d6efd;
+    --topic-bg: #f5f5f5;
+    --topic-border: #6c757d;
+    --content-bg: #fcfcfc;
+    --content-border: #ccc;
+
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-head: 'Sofia', cursive;
+    --font-subhead: 'Poppins', sans-serif;
+
+}
+:root.dark {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --highlight-bg: #3b3b3b;
+    --border-color: #444;
+    --card-bg: #1e1e1e;
+    --card-text: #f1f1f1;
+    --btn-bg: #ffffff;
+    --btn-color: #212529;
+    --btn-highlight: #fff3cd;
+
+    /* Dark counterparts */
+    --section-bg: #1a2b44;
+    --section-border: #4dabf7;
+    --topic-bg: #2a2a2a;
+    --topic-border: #999;
+    --content-bg: #1c1c1c;
+    --content-border: #555;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    transition: all 0.4s ease;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-family: var(--font-head);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInScale 1.2s ease forwards;
+}
+
+/* Logo Animation */
+summary img {
+    animation: logoIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes logoIn {
+    0% {
+        transform: scale(0.7) rotate(-10deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+details {
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    font-size: 0.95rem;
+}
+
+summary {
+    font-family: var(--font-head);
+    color: var(--card-text);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+summary:hover {
+    color: #0df9fd;
+}
+
+/* Nested details styling */
+details > details {
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border: 1px solid #dee2e6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: none;
+    padding: 1rem;
+}
+
+
+details > summary {
+    font-family: var(--font-head);
+}
+
+details > details summary {
+    font-size: 1.1rem;
+    color: #0d6efd;
+    font-family: var(--font-subhead);
+}
+
+details details summary {
+    font-family: var(--font-subhead);
+}
+
+summary.font-effect-outline,
+summary.font-effect-fire-animation,
+summary[class^="font-effect"] {
+    font-family: var(--font-head);
+}
+
+/* Readability and Spacing */
+p, li, ul, ol {
+    color: var(--card-text);
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+}
+
+ul, ol {
+    padding-left: 1.4rem;
+    margin-left: 0.5rem;
+}
+
+.highlight {
+    background-color: var(--highlight-bg);
+    padding: 0 0.3em;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+    details {
+        padding: 1rem;
+    }
+
+    summary {
+        font-size: 1rem;
+    }
+
+    p,
+    li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Toggle Button */
+.toggle-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: var(--btn-highlight);
+    color: var(--btn-color);
+}
+
+.toggle-icon {
+    display: inline-block;
+    transition: transform 0.5s ease, opacity 0.4s ease;
+    transform-origin: center;
+}
+
+.toggle-label {
+    display: inline-block;
+    transition: opacity 0.4s ease;
+}
+
+/* Flip animation */
+.toggle-btn.flipping .toggle-icon {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.toggle-btn.flipping .toggle-label {
+    opacity: 0;
+}
+
+body, details, summary, p, li {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.details-content {
+    padding-top: 0.5rem;
+}
+
+/* Heading summaries (2nd level, with font-effect class) */
+summary.font-effect-outline,
+summary.font-effect-fire-animation,
+summary[class^="font-effect"] {
+    background-color: var(--section-bg);
+    border-left: 4px solid var(--section-border);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 8px rgba(13, 110, 253, 0.1);
+}
+
+details > details > summary {
+    background-color: var(--topic-bg);
+    border-left: 3px solid var(--topic-border);
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+    color: var(--text-color);
+}
+
+.details-content {
+    background-color: var(--content-bg);
+    border-left: 2px dashed var(--content-border);
+    padding: 0.75rem 1rem;
+    margin-top: 0.4rem;
+    border-radius: 4px;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+}
+
+/* Optional: differentiate content block */
+.details-content p,
+.details-content ul,
+.details-content ol {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+
