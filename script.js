@@ -91,6 +91,31 @@ function setThemeByTime() {
     }
 }
 
-window.addEventListener("DOMContentLoaded", setThemeByTime);
+function simulateOpenFirstDetail() {
+    const detail = document.querySelector("details");
+    const summary = detail.querySelector("summary");
+    const content = detail.querySelector(".details-content");
+
+    if (!content) return;
+
+    // Make sure it's open
+    detail.setAttribute("open", "");
+
+    // Reset any blocking styles
+    content.style.opacity = "0";
+    content.style.maxHeight = "0";
+
+    // Animate like a click
+    requestAnimationFrame(() => {
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.opacity = "1";
+    });
+
+    setTimeout(() => {
+        content.style.maxHeight = "none"; // allow natural growth
+    }, 400);
+}
+
+window.addEventListener("DOMContentLoaded", () => { setThemeByTime?.(); simulateOpenFirstDetail(); });
 
 setInterval(setThemeByTime, 120000);
