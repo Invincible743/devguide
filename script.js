@@ -116,6 +116,6 @@ function simulateOpenFirstDetail() {
     }, 400);
 }
 
-window.addEventListener("DOMContentLoaded", () => { setThemeByTime?.(); simulateOpenFirstDetail(); });
+window.addEventListener("DOMContentLoaded", () => { setThemeByTime?.(); simulateOpenFirstDetail(); }); 
 
 setInterval(setThemeByTime, 120000);
