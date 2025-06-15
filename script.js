@@ -118,4 +118,4 @@ function simulateOpenFirstDetail() {
 }
 
 window.addEventListener("DOMContentLoaded", () => { setThemeByTime?.(); simulateOpenFirstDetail();}); 
-var timeInterval = setInterval(setThemeByTime, 120000);
+let timeInterval = setInterval(setThemeByTime, 120000);
