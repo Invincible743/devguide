@@ -68,6 +68,7 @@ function toggleTheme() {
 
         // End flip
         btn.classList.remove("flipping");
+        clearInterval(timeInterval);
     }, 300); // match transition timing
 }
 
@@ -116,6 +117,4 @@ function simulateOpenFirstDetail() {
     }, 400);
 }
 
-window.addEventListener("DOMContentLoaded", () => { setThemeByTime?.(); simulateOpenFirstDetail(); }); 
-
-setInterval(setThemeByTime, 120000);
+window.addEventListener("DOMContentLoaded", () => { setThemeByTime?.(); simulateOpenFirstDetail(); var timeInterval = setInterval(setThemeByTime, 120000);}); 
